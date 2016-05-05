@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <!-- STEP 1: INCLUDE CSS AND JS FILES TO YOUR <HEAD> -->
+        <link href="css/countdown.css" rel="stylesheet" type="text/css" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/countdown.js"></script>
+        <!-- STEP 1: /INCLUDE CSS AND JS FILES TO YOUR <HEAD> -->
+        
+        <!-- STEP 2: SETUP CLOCK INSTANCES -->
+        <script type="text/javascript">
+            
+            jQuery(document).ready(function(){
+                // CLOCK VARIANT 1
+                jQuery(".my-clock-place1").buildCounter({
+                    now_timestamp      : "", /* Current time. Fill if you are using server side unix timestamp like PHP strtotime("now"); */
+                    stardate_timestamp : "", /* Start date. Fill if you are using server side unix timestamp like PHP strtotime("25 May 2013 11:00:00"); */
+                    enddate_timestamp  : "", /* End date. Fill if you are using server side unix timestamp like PHP strtotime("25 May 2013 00:00:00"); */
+                    
+                    startdate        : "1 November 2013 00:00:00 CST", /* Client-Side time. Start Date. This is overwrited if unix timestamp exists. */
+                    enddate          : "6 May 2016 22:56:00 CST", /* Client-Side time. End Date. This is overwrited if unix timestamp exists. */
+                    color1           : "#ff7c00", /* Days Circle Color */
+                    color2           : "#ffc937", /* Hours Circle Color */
+                    color3           : "green", /* Minutes Circle Color */
+                    color4           : "blue", /* Seconds Circle Color */
+                    backgroundcolor1 : "#e3dfdf",    /* Days Circle Background Color */
+                    backgroundcolor2 : "#e3dfdf",    /* Hours Circle Background Color */
+                    backgroundcolor3 : "#e3dfdf",    /* Minutes Circle Background Color */
+                    backgroundcolor4 : "#e3dfdf",    /* Seconds Circle Background Color */
+                    glow1            : "", /* Days Circle Color Glow */
+                    glow2            : "", /* Hours Circle Color Glow */
+                    glow3            : "", /* Minutes Circle Color Glow */
+                    glow4            : "", /* Seconds Circle Color Glow */
+                    glowwidth1       : "0",       /* Days Circle Glow Width */
+                    glowwidth2       : "0",       /* Hours Circle Glow Width */
+                    glowwidth3       : "0",       /* Minutes Circle Glow Width */
+                    glowwidth4       : "0",       /* Seconds Circle Glow Width */
+                    backgroundwidth1 : "5",      /* Days Circle Background Width */
+                    backgroundwidth2 : "5",      /* Hours Circle Background Width */
+                    backgroundwidth3 : "5",      /* Minutes Circle Background Width */
+                    backgroundwidth4 : "5",      /* Seconds Circle Background Width */
+                    frontwidth1      : "5",      /* Days Circle Width */
+                    frontwidth2      : "5",      /* Hours Circle Width */
+                    frontwidth3      : "5",      /* Minutes Circle Width */
+                    frontwidth4      : "5",      /* Seconds Circle Width */
+                    size1            : "150",     /* Days Clock Size */
+                    size2            : "150",     /* Hours Clock Size */
+                    size3            : "150",     /* Minutes Clock Size */ 
+                    size4            : "150",     /* Seconds Clock Size */
+                    textsize1        : "15",      /* Days Font Size */
+                    textsize2        : "15",      /* Hours Font Size */
+                    textsize3        : "15",      /* Minutes Font Size */
+                    textsize4        : "15",      /* Seconds Font Size */
+                    countsize1       : "35",      /* Days Count Font Size */
+                    countsize2       : "35",      /* Hours Count Font Size */
+                    countsize3       : "35",      /* Minutes Count Font Size */
+                    countsize4       : "35",      /* Seconds Count Font Size */
+                    textcolor1       : "#FFFFFF", /* Days Font Color */
+                    textcolor2       : "#FFFFFF", /* Hours Font Color */
+                    textcolor3       : "#FFFFFF", /* Minutes Font Color */ 
+                    textcolor4       : "#FFFFFF", /* Seconds Font Color */
+                    countcolor1      : "#FFFFFF", /* Days Count Font Color */
+                    countcolor2      : "#FFFFFF", /* Hours Count Font Color */
+                    countcolor3      : "#FFFFFF", /* Minutes Count Font Color */
+                    countcolor4      : "#FFFFFF", /* Seconds Count Font Color */
+                    layout           : "dhms",    /* Clock layouts: dhms, hms, ms, s */
+                });
+            });
+        </script>
+        <!-- /STEP 2: SETUP CLOCK INSTANCES -->
+    </head>
+
+    <body class="background-images">
+        <div class="my-clock-place1"></div> <!-- CLOCK VARIANT 1 -->
+        <div class="text-content"></div>
+    </body>
+</html>
