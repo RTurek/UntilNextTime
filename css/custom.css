@@ -104,18 +104,18 @@
       #clock { height: 15vw; margin-top: -5vw; font-size: 10vw;}
       #clock span {margin: 0px 1vw; margin-top: 1vw;}
       #clock em.label { font-size: 2vw; }
-      #flight {margin-top: -19vw;}
-      #flight div {width: 12vw; height: 12vw; border-radius: 12vw;}
-      .text{font-size: 8vw; margin-bottom: -20vw; height: 8vw;}
+      #flight {margin-top: -22vw;}
+      #flight div {width: 13vw; height: 13vw; border-radius: 13vw;}
+      .text{font-size: 6vw; margin-bottom: -20vw; height: 8vw;}
     }
 
     @media (max-width: 1300px) {
       #clock { height: 20vw; margin-top: -10vw; font-size: 13vw;}
       #clock span {margin: 0px 1vw; margin-top: 1vw;}
       #clock em.label { font-size: 2.5vw; }
-      #flight {margin-top: -27vw;}
-      #flight div {width: 14vw; height: 14vw; border-radius: 14vw;}
-      .text{font-size: 8vw; margin-bottom: -20vw; height: 8vw;}
+      #flight {margin-top: -35vw;}
+      #flight div {width: 19vw; height: 19vw; border-radius: 19vw;}
+      .text{font-size: 8vw; margin-bottom: -23vw; height: 8vw;}
     }
 
     @media (max-width: 400px) {
