@@ -1,6 +1,9 @@
 .background-images {
-    background-image: url(background-images/milwaukee-1.jpg);
-    background-position: center;
+    background-image: url(background-images/milwaukeeskyline.gif);
+    background-position: inherit;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #45709f;
 }
 
 .my-clock-place1 {
