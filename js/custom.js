@@ -37,7 +37,7 @@ $(document).ready(function(){
       "css/background-images/milwaukee-3.jpg",
       "css/background-images/milwaukee-4.jpg",
     ], {
-      duration: 4000,
+      duration: 15000,
       fade: 'slow'
     });
   } else {
@@ -47,7 +47,7 @@ $(document).ready(function(){
       "css/background-images/dallas-3.jpg",
       "css/background-images/dallas-4.jpg",
     ], {
-      duration: 4000,
+      duration: 15000,
       fade: 'slow'
     });
   }
