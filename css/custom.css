@@ -1,0 +1,128 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700);
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+
+    /* RESET */
+    html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+    /* Styling */
+    body {
+      font-family: "Roboto";
+      background: #000 url(background-images/milwaukee-1-sm.jpg) no-repeat top left;
+      background-size: 100% auto;
+      color: #fff;
+      text-align: center;
+    }
+
+    body > * {
+      z-index: 2;
+      position: relative;
+    }
+
+    body:after {
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      z-index: 1;
+      background: rgba(255,255,255,0.2);
+    }
+
+    body.closed:after {
+      display: none;
+    }
+
+    body.closed #calendarAuth {
+      display: none;
+    }
+
+
+    h1 {
+      font-weight: 100;
+      letter-spacing: 1px;
+      font-size: 8vw;
+      margin: 10vw auto 5vw auto;
+    }
+
+    ul {list-style: none; position: relative;}
+
+    #clock {
+      text-shadow: -1px -1px 0 rgba(0,0,0,.4),1px -1px 0 rgba(0,0,0,.4),-1px 1px 0 rgba(0,0,0,.4),1px 1px 0 rgba(0,0,0,.4);
+      font-size: 4vw;
+      height: 10vw;
+      font-weight: 100;
+      overflow: hidden;
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      margin-top: -5vw;
+      background: rgba(0,0,0,0.6);
+    }
+
+      #clock span { display: inline-block; margin: 0px 1vw; margin-top: 2vw;}
+        #clock em { display: block; }
+        #clock em.number { }
+        #clock em.label { font-size: 0.8vw; }
+
+
+    .backstretch img {
+      -webkit-filter: grayscale(0%);
+    }
+
+    #flight { text-align: center; height: 200px; position: absolute; width: 100%; top: 50%; margin-top: -14vw;}
+      #flight div { width: 8vw; height: 8vw; display: inline-block; border-radius: 8vw; overflow: hidden; border: solid 2px #fff;}
+      #flight div.plane {border: none;}
+        #flight div img {width: 100%; height: 100%;}
+        #flight div.plane img {width: 75%; height: 75%; margin-top: 12.5%;}
+
+    #toDallas .plane img {-webkit-transform: rotate(-180deg);}
+
+    .text{
+      font-family: 'Pacifico', cursive;
+      font-size: 3vw;
+      height: 5vw;
+      font-weight: 100;
+      text-shadow: -2px -2px 0 rgba(0,0,0,.4),2px -2px 0 rgba(0,0,0,.4),-2px 2px 0 rgba(0,0,0,.4),2px 2px 0 rgba(0,0,0,.4);
+      position: absolute;
+      width: 100%;
+      bottom: 50%;
+      margin-bottom: -12.5vw;
+    }
+
+    @media (max-width: 2200px) {
+      #clock { height: 10vw; margin-top: -5vw; font-size: 6vw;}
+      #clock span {margin: 0px 1vw; margin-top: 1vw;}
+      #clock em.label { font-size: 0.8vw; }
+      #flight {margin-top: -14vw;}
+      #flight div {width: 8vw; hegiht: 8vw; border-radius: 8vw;}
+      .text{font-size: 3vw; margin-bottom: -12.5vw; height: 5vw;}
+    }
+
+    @media (max-width: 1700px) {
+      #clock { height: 15vw; margin-top: -5vw; font-size: 10vw;}
+      #clock span {margin: 0px 1vw; margin-top: 1vw;}
+      #clock em.label { font-size: 2vw; }
+      #flight {margin-top: -19vw;}
+      #flight div {width: 12vw; height: 12vw; border-radius: 12vw;}
+      .text{font-size: 8vw; margin-bottom: -20vw; height: 8vw;}
+    }
+
+    @media (max-width: 1300px) {
+      #clock { height: 20vw; margin-top: -10vw; font-size: 13vw;}
+      #clock span {margin: 0px 1vw; margin-top: 1vw;}
+      #clock em.label { font-size: 2.5vw; }
+      #flight {margin-top: -27vw;}
+      #flight div {width: 14vw; height: 14vw; border-radius: 14vw;}
+      .text{font-size: 8vw; margin-bottom: -20vw; height: 8vw;}
+    }
+
+    @media (max-width: 400px) {
+      #clock { height: 40vw; margin-top: -20vw; font-size: 18vw;}
+      #clock span {margin: 0px 1vw; margin-top: 8vw;}
+      #clock em.label { font-size: 4vw; }
+      #flight {margin-top: -50vw;}
+      #flight div {width: 25vw; height: 25vw; border-radius: 25vw;}
+      .text{font-size: 12vw; margin-bottom: -40vw; height: 12vw;}
+    }
