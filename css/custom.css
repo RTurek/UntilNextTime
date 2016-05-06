@@ -114,6 +114,7 @@
       #clock span {margin: 0px 1vw; margin-top: 1vw;}
       #clock em.label { font-size: 2.5vw; }
       #flight {margin-top: -35vw;}
+      .plane {margin-bottom: 1vw;}
       #flight div {width: 19vw; height: 19vw; border-radius: 19vw;}
       .text{font-size: 8vw; margin-bottom: -23vw; height: 8vw;}
     }
