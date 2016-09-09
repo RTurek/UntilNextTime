@@ -30,7 +30,7 @@ function pushTime(daysUntil, hoursUntil, minutesUntil, secondsUntil){
 
 $(document).ready(function(){
   var direction = $('body').attr('id');
-  if(direction === 'toMilwaukee'){
+  if(direction === 'toDallas'){
     $.backstretch([
       "css/background-images/milwaukee-1.jpg",
       "css/background-images/milwaukee-2.jpg",
