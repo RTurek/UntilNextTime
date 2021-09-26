@@ -26,8 +26,6 @@ function pushTime(daysUntil, hoursUntil, minutesUntil, secondsUntil){
   $('#seconds .number').text(secondsUntil);
 }
 
-
-
 $(document).ready(function(){
   var direction = $('body').attr('id');
   if(direction === 'toDallas'){
@@ -51,6 +49,4 @@ $(document).ready(function(){
       fade: 'slow'
     });
   }
-
-
 });
